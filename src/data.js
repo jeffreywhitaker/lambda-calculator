@@ -10,7 +10,7 @@ export function NumbersArray() {
   )
 }
 
-export function Operators() {
+export function OperatorsArray() {
   return (
     [
       {
@@ -37,7 +37,7 @@ export function Operators() {
   )
 }
 
-export function Specials() {
+export function SpecialsArray() {
   return (
     ["C", "+/-", "%"]
   )
