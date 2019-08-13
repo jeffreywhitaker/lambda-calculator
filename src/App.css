@@ -1,0 +1,33 @@
+.container {
+    background-color: red;
+    border: 2px solid black;
+    display: inline-block;
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.display {
+    width: 80%;
+    background-color: black;
+}
+
+.numberButton, .operatorButton, .specialButton {
+    height: 50px;
+    width: 50px;
+    margin: 8px;
+}
+
+.operatorButton {
+    display: flex;
+    flex-direction: column;
+}
+
+.App {
+    display: flex;
+}
+
+.NumAndSpecialButtons {
+    display: flex;
+    flex-direction: column;
+}
