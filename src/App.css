@@ -7,20 +7,47 @@
     border-radius: 20px;
 }
 
+.logo-container {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
 .display {
-    width: 80%;
+    margin: auto;
+    height: 50px;
+    width: 70%;
     background-color: black;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.OperatorButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 10px;
 }
 
 .numberButton, .operatorButton, .specialButton {
     height: 50px;
     width: 50px;
     margin: 8px;
+    border-radius: 30px;
 }
 
 .operatorButton {
     display: flex;
     flex-direction: column;
+    background-color: dodgerblue;
+}
+
+.numberButton {
+    background-color: blue;
+}
+
+.specialButton {
+    background-color: cyan;
 }
 
 .App {
@@ -30,4 +57,5 @@
 .NumAndSpecialButtons {
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
 }
