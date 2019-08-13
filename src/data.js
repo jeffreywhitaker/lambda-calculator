@@ -4,17 +4,15 @@
 // file. No real tricks here just be aware of what is in each array
 // and how you'll access the data.
 
-import React from "react"
-
-export default function Numbers() {
+export function NumbersArray() {
   return (
-    const numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "."];
+    ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "."]
   )
 }
 
-export default function Operators() {
+export function Operators() {
   return (
-    const operators = [
+    [
       {
         char: "/",
         value: "/"
@@ -39,7 +37,8 @@ export default function Operators() {
   )
 }
 
-
-
-
-const specials = ["C", "+/-", "%"];
+export function Specials() {
+  return (
+    ["C", "+/-", "%"]
+  )
+}
