@@ -4,41 +4,29 @@
 // file. No real tricks here just be aware of what is in each array
 // and how you'll access the data.
 
-export function NumbersArray() {
-  return (
-    ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "."]
-  )
-}
+export const NumbersArray = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "."];
 
-export function OperatorsArray() {
-  return (
-    [
-      {
-        char: "/",
-        value: "/"
-      },
-      {
-        char: "x",
-        value: "*"
-      },
-      {
-        char: "-",
-        value: "-"
-      },
-      {
-        char: "+",
-        value: "+"
-      },
-      {
-        char: "=",
-        value: "="
-      }
-    ]
-  )
-}
+export const OperatorsArray = [
+  {
+    char: "/",
+    value: "/"
+  },
+  {
+    char: "x",
+    value: "*"
+  },
+  {
+    char: "-",
+    value: "-"
+  },
+  {
+    char: "+",
+    value: "+"
+  },
+  {
+    char: "=",
+    value: "="
+  }
+];
 
-export function SpecialsArray() {
-  return (
-    ["C", "+/-", "%"]
-  )
-}
+export const SpecialsArray = ["C", "+/-", "%"];

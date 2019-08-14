@@ -7,9 +7,9 @@ import "./App.css";
 
 // Logo has already been provided for you. Do the same for the remaining components
 import Logo from "./components/DisplayComponents/Logo";
-import {NumberButton} from "./components/ButtonComponents/NumberButtons/NumberButton"
-import {SpecialButton} from "./components/ButtonComponents/SpecialButtons/SpecialButton"
-import {OperatorButton} from "./components/ButtonComponents/OperatorButtons/OperatorButton"
+import Numbers from "./components/ButtonComponents/NumberButtons/Numbers"
+import {Specials} from "./components/ButtonComponents/SpecialButtons/Specials"
+import {Operators} from "./components/ButtonComponents/OperatorButtons/Operators"
 
 function App() {
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
@@ -25,30 +25,14 @@ function App() {
       <div className="App">
         <div className="NumAndSpecialButtons">
           <div className="SpecialButtons">
-            <SpecialButton />
-            <SpecialButton />
-            <SpecialButton />
+            <Specials />
           </div>
           <div className="NumButtons">
-            <NumberButton />
-            <NumberButton />
-            <NumberButton />
-            <NumberButton />
-            <NumberButton />
-            <NumberButton />
-            <NumberButton />
-            <NumberButton />
-            <NumberButton />
-            <NumberButton />
-            <NumberButton />
+            <Numbers />
           </div> 
         </div>
         <div className="OperatorButtons">
-            <OperatorButton />
-            <OperatorButton />
-            <OperatorButton />
-            <OperatorButton />
-            <OperatorButton />
+            <Operators />
         </div>
 
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}

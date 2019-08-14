@@ -11,7 +11,7 @@ export const Operators = () => {
   return (
     <div>
         {OperatorsArray.map( item => (
-        <OperatorButton operator={item} />
+        <OperatorButton operator={item.char} />
       ))}
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
