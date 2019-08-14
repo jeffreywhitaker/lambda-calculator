@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./index.css";
 import "./App.css";
 // STEP 4 - import the button and display components
@@ -8,8 +8,9 @@ import "./App.css";
 // Logo has already been provided for you. Do the same for the remaining components
 import Logo from "./components/DisplayComponents/Logo";
 import Numbers from "./components/ButtonComponents/NumberButtons/Numbers"
-import {Specials} from "./components/ButtonComponents/SpecialButtons/Specials"
-import {Operators} from "./components/ButtonComponents/OperatorButtons/Operators"
+import Specials from "./components/ButtonComponents/SpecialButtons/Specials"
+import Display from "./components/DisplayComponents/Display"
+import Operators from "./components/ButtonComponents/OperatorButtons/Operators"
 
 function App() {
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
@@ -17,18 +18,20 @@ function App() {
   // Your functions should accept a parameter of the the item data being displayed to the DOM (ie - should recieve 5 if the user clicks on
   // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
   // Don't forget to pass the functions (and any additional data needed) to the components as props
+  const [displayValue, setDisplayValue] = useState('0');
+  const addNumber = (number) => setDisplayValue(displayValue + number)
 
   return (
     <div className="container">
       <Logo />
-      <div className="display"></div>
+      <Display number={displayValue}/>
       <div className="App">
         <div className="NumAndSpecialButtons">
           <div className="SpecialButtons">
             <Specials />
           </div>
           <div className="NumButtons">
-            <Numbers />
+            <Numbers addNumber={addNumber}/>
           </div> 
         </div>
         <div className="OperatorButtons">

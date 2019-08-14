@@ -2,11 +2,11 @@ import React, {useState} from "react";
 
 //import any components needed
 import {SpecialsArray} from "../../../data"
-import {SpecialButton} from "./SpecialButton"
+import SpecialButton from "./SpecialButton"
 
 //Import your array data to from the provided data file
 
-export const Specials = () => {
+const Specials = () => {
   // STEP 2 - add the imported data to state
   const [specials, setSpecials] = useState(SpecialsArray)
   return (
@@ -20,3 +20,5 @@ export const Specials = () => {
     </div>
   );
 };
+
+export default Specials
